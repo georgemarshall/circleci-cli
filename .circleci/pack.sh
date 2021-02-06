@@ -17,6 +17,8 @@ function get_arch_type() {
         echo "386"
     elif [[ $(uname -m) == "x86_64" ]]; then
         echo "amd64"
+    elif [[ $(uname -m) == "arm64" ]]; then
+        echo "arm64"
     fi
 }
 
